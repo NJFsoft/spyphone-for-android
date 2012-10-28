@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.spyphone"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:name="com.spyphone.SpyPhone"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.spyphone.SpyCameraActivity"
+                android:configChanges="orientation|keyboardHidden"
+                android:label="SpyCamera - Saving Picture to Gallery">
+        </activity>
+
+    </application>
+
+    <uses-permission android:name="android.permission.CAMERA">
+    </uses-permission>
+    <uses-permission
+            android:name="android.permission.FLASHLIGHT"
+            android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+            android:protectionLevel="normal">
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS">
+    </uses-permission>
+</manifest> 

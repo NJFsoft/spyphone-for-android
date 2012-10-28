@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="10"
+            android:text="SpyPhone is Monitoring Incoming SMS's\nIf the sms starts with the word PIC, it will silently take a picture.\nThe picture will be saved to your gallery.\nIf the sms starts with the word VOICE, it will silently record for 6 seconds.\nThe recording will be saved in My Files folder."
+            >
+
+    </TextView>
+    <LinearLayout
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+            >
+<Button
+        android:id="@+id/btnTestCam"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Test Cam"
+    android:layout_weight="1.0"
+    /><Button
+            android:id="@+id/btnTestRecorder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Test Recorder"
+            android:layout_weight="1.0"
+            />  </LinearLayout>
+</LinearLayout>
+
